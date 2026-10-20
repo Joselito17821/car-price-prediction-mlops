@@ -12,10 +12,10 @@ COLUMNAS_ENTRADA = ["yr_mfr", "kms_run", "total_owners", "warranty_avail",
                     COL_FECHA] + CAT_COLS
 
 
-def limpiar_entrenamiento(df):
+def limpiar_entrenamiento(df, target=TARGET):
     """Filtros solo para entrenamiento; nunca se aplican a datos nuevos."""
     df = df.drop_duplicates()
-    df = df[df[TARGET] > 0]
+    df = df[df[target] > 0]
     df = df.dropna(subset=[COL_FECHA])
     return df.reset_index(drop=True)
 
