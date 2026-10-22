@@ -1,0 +1,49 @@
+{
+  "version": "v1",
+  "fecha_creacion": "2026-10-22T11:57:33",
+  "tipo_problema": "regresion",
+  "variable_objetivo": "sale_price",
+  "algoritmo": "RandomForestRegressor sobre log1p del objetivo",
+  "parametros": {
+    "n_estimators": 300,
+    "random_state": 42
+  },
+  "semilla": 42,
+  "columnas_entrada": {
+    "yr_mfr": "numerica",
+    "kms_run": "numerica",
+    "total_owners": "numerica",
+    "warranty_avail": "numerica",
+    "ad_created_on": "fecha",
+    "fuel_type": "categorica",
+    "city": "categorica",
+    "body_type": "categorica",
+    "transmission": "categorica",
+    "source": "categorica",
+    "car_rating": "categorica",
+    "fitness_certificate": "categorica",
+    "make": "categorica",
+    "model": "categorica",
+    "registered_state": "categorica"
+  },
+  "datos": {
+    "fuente": "Kaggle: vrajesh0sharma7/used-car-price-prediction",
+    "archivo": "Used_Car_Price_Prediction.csv",
+    "observaciones_originales": 7400,
+    "observaciones_tras_limpieza": 7395
+  },
+  "separacion": {
+    "estrategia": "train_test_split aleatorio",
+    "test_size": 0.2,
+    "n_train": 5916,
+    "n_test": 1479
+  },
+  "metrica_evaluacion": [
+    "mae",
+    "rmse",
+    "r2"
+  ],
+  "python": "3.14.3",
+  "dependencias": "requirements.txt",
+  "commit": "cb11d1833ff00ec399fd622558842b32b15fd795"
+}
