@@ -6,7 +6,5 @@ __pycache__/
 .idea/
 .DS_Store
 .pytest_cache/
-fase-2/data/*.csv
-!fase-2/data/ejemplo_prediccion.csv
 fase-2/outputs/*
 !fase-2/outputs/.gitkeep
