@@ -59,6 +59,8 @@ pip install -r requirements.txt
 
 En Mac o Linux la activación es `source .venv/bin/activate`. Todas las dependencias tienen versión exacta en `requirements.txt` (incluido pytest), y los modelos guardados solo se cargan con esas versiones.
 
+Si tienes varias versiones de Python instaladas, crea el entorno indicando la 3.14: `py -3.14 -m venv .venv` o `python3.14 -m venv .venv`, según cómo se haya instalado Python. Con el entorno activado, `python --version` debe mostrar 3.14.x.
+
 ## Datos
 
 El dataset completo ya está en el repositorio: `fase-2/data/Used_Car_Price_Prediction.csv` (7.400 registros y 29 columnas; fuente original en Kaggle, enlace arriba). No hace falta descargar nada ni usar credenciales. Tras la limpieza de entrenamiento quedan 7.395 filas.
@@ -182,7 +184,7 @@ Métricas sobre el conjunto de prueba (20 % de los datos), en rupias indias:
 - El Random Forest reduce el MAE en cerca de un 76 % frente al baseline en ambas versiones.
 - `v1` reproduce la salida ejecutada del notebook de la Fase 1 (ver la sección de cambios).
 - Cada versión usa su semilla también para la partición, así que `v1` y `v2` se evalúan sobre conjuntos de prueba distintos y sus métricas no son estrictamente comparables entre sí. La especificación no exige que una mejore a la otra.
-- Con las mismas versiones de librerías, el entrenamiento da resultados idénticos en local y en Docker (se comprobó con 10 árboles: MAE 46.039 y R² 0,920 en ambos).
+- Con las mismas versiones de librerías, los resultados son prácticamente iguales entre computadores, aunque no siempre idénticos. Con 10 árboles y semilla 42 se obtuvo MAE 46.039 en local y en un primer contenedor Docker, y MAE 45.815 dentro de Docker en otro computador (Linux x86_64, mismas versiones de librerías). El R² fue 0,920 en todos los casos. La diferencia (cerca de 0,5 % del MAE) es numérica y propia de cada plataforma.
 
 ## Limitaciones conocidas
 
