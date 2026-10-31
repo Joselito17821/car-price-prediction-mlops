@@ -5,3 +5,6 @@ __pycache__/
 .ipynb_checkpoints/
 .idea/
 .DS_Store
+.pytest_cache/
+fase-2/outputs/*
+!fase-2/outputs/.gitkeep

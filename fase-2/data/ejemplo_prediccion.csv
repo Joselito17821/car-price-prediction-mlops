@@ -1,0 +1,11 @@
+yr_mfr,kms_run,total_owners,warranty_avail,ad_created_on,fuel_type,city,body_type,transmission,source,car_rating,fitness_certificate,make,model,registered_state
+2014,75985,2,True,2019-09-14T08:06:40.784,diesel,gurgaon,hatchback,,online,fair,True,maruti,swift,haryana
+2016,48265,1,False,2021-02-15T20:20:00.035,petrol,mumbai,hatchback,automatic,inperson_sale,great,True,honda,jazz,maharashtra
+2014,78309,1,False,2021-03-31T11:41:55.613,petrol,chennai,hatchback,manual,inperson_sale,great,True,maruti,swift,tamil nadu
+2016,42195,1,False,2021-04-01T05:28:05.329,petrol,bengaluru,hatchback,manual,inperson_sale,great,True,maruti,celerio,karnataka
+2018,49286,1,False,2021-01-30T09:22:46.252,petrol & cng,ghaziabad,suv,manual,inperson_sale,great,True,maruti,eeco,delhi
+2009,93933,2,False,2021-03-08T07:26:29.517,petrol & lpg,hyderabad,hatchback,manual,inperson_sale,good,True,hyundai,santro xing,telangana
+2017,103539,1,False,2021-03-15T05:55:15.458,diesel,mumbai,suv,manual,inperson_sale,great,True,maruti,s cross,maharashtra
+2009,111095,1,False,2021-04-01T13:24:15.211,petrol,new delhi,hatchback,manual,inperson_sale,good,True,hyundai,i10,delhi
+2013,47738,1,False,2021-02-04T11:28:00.742,diesel,new delhi,hatchback,manual,inperson_sale,great,True,maruti,swift,delhi
+2014,75738,1,False,2019-03-14T08:56:17.922,diesel,new delhi,hatchback,manual,,great,True,toyota,etios liva,delhi
